@@ -8,7 +8,7 @@ class CategorySerializer(serializers.ModelSerializer):
     """Serializer for Category model"""
     class Meta:
         model = Category
-        fields = ['id', 'name', 'color']
+        fields = ['id', 'name', 'color'] # Fields to be serialized
         read_only_fields = ['id', 'user']
     
     def create(self, validated_data):
